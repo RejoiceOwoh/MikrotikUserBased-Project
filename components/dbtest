@@ -1,0 +1,27 @@
+// app/index.js (or other component file)
+import { useState, useEffect } from 'react';
+
+function MyComponent() {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/api/fetch-data');
+        const result = await response.json();
+        if (result.startsWith('Data')) {
+          setData(result.substring(5)); // Assuming "Data stored" response
+        } else {
+          setError(result);
+        }
+      } catch (error) {
+        setError(error.message);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  <p>Hey!</p>
+}
