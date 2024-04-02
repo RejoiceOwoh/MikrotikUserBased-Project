@@ -1,6 +1,12 @@
-// import React from "react";
+export default function App() {
+    return <h1>My Name is Chidera</h1>
+}
+
+
+
+// // import React from "react";
 // import Layout from "./layout"; // Import Layout component
-// import DataPage from "./pages/data"; // Import DataPage component
+// // import DataPage from "./pages/data"; // Import DataPage component
 
 // export default function App() {
 //   return (
@@ -13,7 +19,7 @@
 
 
 // import React, { useState, useEffect } from "react";
-// import axios from "axios"; // Import axios for fetching data
+// // import axios from "axios"; // Import axios for fetching data
 
 // const DataList = () => {
 //   const [data, setData] = useState([]);
